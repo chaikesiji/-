@@ -1,0 +1,40 @@
+{
+  "pages": [   
+   "pages/index1/index1",
+    "pages/index/index",
+    "pages/eat/eat",
+     "pages/clo/clo",
+   "pages/cup/cup",
+    "pages/his/his",
+    "pages/emotion/emotion",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "今天怎么过"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list":[
+    {"text":"功能",
+    "pagePath":"pages/index/index",
+    "iconPath":"/images/gongneng.png",
+    "selectedIconPath":"images/gongneng.png"
+    },
+    {"text":"每日资讯",
+      "pagePath":"pages/emotion/emotion",
+      "iconPath":"/images/riji.png",
+      "selectedIconPath":"images/riji.png"
+      },
+      {"text":"我的",
+        "pagePath":"pages/me/me",
+        "iconPath":"/images/shouye.png",
+        "selectedIconPath":"images/shouye.png"
+        }
+    ],
+    "color":"#000",
+    "selectedColor":"#00f"
+    }
+}

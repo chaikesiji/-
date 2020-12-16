@@ -1,0 +1,26 @@
+<image class="background" src="cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/beijing3.jpg"></image>
+<view class = "container">
+  <view class = "today">
+    <text>{{Today}}</text>
+    </view>
+  <view class = "additem">
+    <view class = "add">
+      <form catchsubmit='AddConfirm'>
+      <image class = 'plus' src = 'cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/xinjian.png' ></image>
+      <input value = "{{input}}" auto-focus  class = "InputAdd" placeholder='再次输入一个新计划'bindinput='AddInput' >
+      </input>
+      <button class="btn" form-type="submit">新建</button>
+      </form>
+      <!--创建表单提交数据-->
+    </view>  
+  </view>
+  <view class = "todo-today1">
+    <view class = "todo-today">
+      <view class = "today-item" wx:for = "{{TodayList}}" wx:key="{{ index }}" bindtap="toggleTodoHandle" id = "{{index}}"   >
+        <icon class = "itemcheckbox"   type = "{{item.completed ? 'success' : 'circle'}}"   color="white"/>
+        <text class = "{{item.completed ? 'itemdescriptiontcompleted':'itemdescriptiont'}}" >{{item.description}}</text>
+        <icon class = 'itemremove' type = 'clear' size = '20' color = "white" bindtap="removeTodoHandle" id = '{{index}}' />
+      </view>
+    </view>
+  </view>
+</view>

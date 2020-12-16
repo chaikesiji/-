@@ -1,0 +1,25 @@
+<image class="background" src="cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/beijing3.jpg"></image>
+<view class='container'>
+   <view class="header">
+ 点击按钮决定今天去哪吃饭
+   </view>
+<view class="main">
+  <view class="canvas-container">
+    <view  animation="{{animationData}}" class="canvas-content" >
+      <view class="canvas-line">
+        <view class="canvas-litem" wx:for="{{awardsList}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+          </view>
+      <view class="canvas-list">
+        <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+            <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+        </view>
+      </view>
+    </view>
+    <!--设置动画中转盘，转盘上不同部分的分隔线，转盘上的文字等多种组件并进行数据绑定-->
+      <view bindtap="playReward" class="canvas-btn {{btnDisabled}}">
+        <!--点击按钮后触发以及按钮被按前后的状态-->
+    </view>
+  </view>
+</view>
+</view>
+

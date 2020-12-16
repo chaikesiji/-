@@ -1,0 +1,10 @@
+<!--pages/index/idex.wxml-->
+
+<view>
+ <image class='background'src="cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/beijing3.jpg" ></image>
+   <view class="container">
+     <button class="btn" type="primary" bindtap='gotohispage'><text class="text">历史上的今天</text></button><!--设置字体和按钮的样式-->
+     <button class="btn" type="primary" bindtap='gotoclopage' ><text class="text">我的衣橱</text></button>
+     <button class="btn" type="primary" bindtap='gotoeatpage'><text class="text">今天去哪吃</text></button>
+   </view>
+</view> 

@@ -1,0 +1,15 @@
+/* pages/index/idex.wxss */
+.btn{
+ margin-top: 0rpx;
+ margin-bottom:100rpx;
+}
+.text{
+ color: white;
+}
+.background{
+  width:100%;
+  height: 100%;
+  position:absolute;
+  background-size: 100% 100%;
+  z-index:-1;
+}

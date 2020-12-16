@@ -1,0 +1,10 @@
+
+<view class="container">
+  <checkbox-group bindchange="HandleItemChange" class="check">
+    <checkbox value='{{item.value}}' wx:for='{{list}}' wx:key='id'>
+       <image class="images" src='{{item.position}}'></image>
+        {{item.name}}
+    </checkbox>
+  </checkbox-group>
+ <view>今天要穿的衣服：{{checkedList}}</view>
+</view>

@@ -1,0 +1,12 @@
+.container{
+padding-top: 10px;
+padding-left: 40px;
+
+}
+.images{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+  

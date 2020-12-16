@@ -1,0 +1,8 @@
+<!--pages/index1/index1.wxml-->
+<image class='background' src="cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/beijing7.jpg"></image>
+ <view class='container'>
+  <text class="text">你准备好迎接今天了吗？</text>
+  <text class="text">点击</text><navigator url='/pages/index/index' hover-class='nav-hover' class='nav-default' style='font-weight:bold;font-size:25px' open-type="switchTab">我的一天</navigator><text class='text'>开启今天的旅程吧</text>
+   <!--通过navigator组件实现页面间的跳转-->
+  <view class='text'>Ｏ(≧▽≦)Ｏ </view>
+ </view>  

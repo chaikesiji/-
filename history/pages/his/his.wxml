@@ -1,0 +1,20 @@
+<form catchsubmit="formSubmit">
+<!-- 给form添加catchsubmit属性，值为formSubmit，即表单提交后触发formSubmit函数，formSubmit函数写在his.js里。-->
+ <view class='form'> 
+  <image class="background" src="cloud://test-0gchyt68b5577ddc.7465-test-0gchyt68b5577ddc-1303839003/beijing3.jpg"></image>
+  <input name="input_content1" class="inp" placeholder="请输入月"placeholder-class="inp-style" >
+  </input>
+  <input name="input_content2" class="inp" placeholder="请输入日" placeholder-class="inp-style" >
+  </input>
+<!-- 给input组件添加name属性，值为input_content，表示表单提交后该输入框的值的键的名字是input_content。-->
+  <button formType="submit" class="btn">提交</button> 
+<!-- 给button组件添加formType属性，值为submit，表示该按钮为提交表单的按钮，点击则提交表单，form表单组件内部所有带name属性的组件的值都会被传递给formSubmit函数。-->
+  <view wx:for="{{result}}" wx:for-index="id" wx:for-item="des">
+  <view>{{result[id].year}}---{{result[id].title}}
+  <image src='{{result[id].pic}}'></image>
+  </view>
+<!--对result这个数组里的数据进行解析，并逐条展示-->
+  </view>
+<text class="text">由于API本身的局限，今天在历史上发生的事情可能没有反馈</text>
+ </view>
+</form> 

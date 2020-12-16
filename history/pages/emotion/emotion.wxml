@@ -1,0 +1,5 @@
+<view wx:for="{{result}}" wx:for-index="uniquekey" wx:for-item="title">
+    <image src='{{result[uniquekey].thumbnail_pic_s}}'></image>
+    <view><web-view src='{{result[uniquekey].url}}'/>{{result[uniquekey].url}}</view>
+<!--对result这个数组里的数据进行解析，并逐条展示-->
+</view> 
